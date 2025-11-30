@@ -1,7 +1,7 @@
 
-# Jack Hesprich CSS Resume Assignment
+# Jack Hesprich CSS Resume 
 
-Yay!
+I updated the site to include my art portfolio and improve design. :)
 
 ---
 

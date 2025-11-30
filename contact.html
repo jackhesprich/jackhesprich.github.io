@@ -1,56 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Jack Hesprich</title>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Jack Hesprich</title>
     
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Almendra+SC&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Almendra+Display&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
-  <body>
-  <nav>
-   <p>Jack Hesprich</p> 
-   <p><a href="index.html">About Jack Hesprich</a></p>
-</nav>
-<header>
-    <h1>Jack Hesprich</h1>
-    </header>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Almendra+SC&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Almendra+Display&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
 
-    <p class="address">2165 S Milledge Ave, Athens, GA 30338 &ndash; (678) 832-8209 &ndash; jackhesprich@uga.edu</p>
+    <body>
 
-<hr>
-<section class="one-col">
-    <form action="https://formsubmit.co/1cc495cb8620c9acd007d247c599efea" method="POST">
-    <p>
-      <label>Your Name:</label>
-      <input type="text" name="name" required>
-   </p>
-   <p>
-      <label>Email:</label>
-      <input type="email" name="email" value="" required>
-   </p>
-   <p>
-    <label> Message:</label>
-    <textarea name="message" required> </textarea>
-   </p>
-   <button type="submit"> Submit </button>
-    </form>
-</section>
-<section>
-  <h2>*Background Images*</h2>
-  <p>
-    Background photos by <a href="https://unsplash.com/@artchicago?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Art Institute of Chicago</a> on <a href="https://unsplash.com/photos/a-painting-of-animals-and-trees-on-a-green-background-4S5wODTNhkE?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
-  </p>
-  <p>
-    and <a href="https://unsplash.com/@nypl?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">The New York Public Library</a> on <a href="https://unsplash.com/photos/5brwwAM27Ps?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
-  </p>
-</section>
-<footer>
-    &copy; <a href="index.html">Jack Hesprich</a> <a href="https://www.linkedin.com/in/jack-hesprich-8069472a5/"><i class="fab fa-linkedin"></i> </a>
-</footer>
-</body>
+        <nav id="nav">
+            <p>Jack Hesprich</p> 
+            <div>
+                <p><a href="index.html">About</a></p>
+                <p><a href="portfolio.html">Portfolio</a></p>
+            </div>
+        </nav>
+
+        <div class="underContact">
+
+            <section class="section">
+                <h1>Contact Me</h1>
+                <p>
+                    Feel free to reach out to me at:
+                </p>
+                <div class="address">
+                    <p>2165 S Milledge Ave, Athens, GA 30338</p>
+                    <p>(678) 832-8209</p>
+                    <p>jackhesprich@uga.edu</p>
+                </div>
+                <p>
+                    Or by using this form:
+                </p>
+            </section>
+
+            <div style="margin-top: 30px;"></div>
+
+            <section class="card">
+                <form action="https://formsubmit.co/1cc495cb8620c9acd007d247c599efea" method="POST">
+                    <p>
+                        <label>Your Name:</label>
+                        <input type="text" name="name" required>
+                    </p>
+                    <p>
+                        <label>Email:</label>
+                        <input type="email" name="email" value="" required>
+                    </p>
+                    <p>
+                        <label> Message:</label>
+                    </p>
+                    <p>
+                        <textarea name="message" required> </textarea>
+                    </p>
+                    <button type="submit"> Submit </button>
+                </form>
+            </section>
+        </div>
+
+        <footer>
+            <p>©Jack Hesprich</p>
+        </footer>
+    </body>
+
+
 </html>

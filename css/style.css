@@ -1,16 +1,12 @@
 * { margin: 0; padding: 0; }
 
-
-
-
-
+/****************   General Styling **********************/
 body {
-   
-   background-image: url("https://images.unsplash.com/photo-1755544212941-9c450ef4d369?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
-   font-family: "Almendra Display", serif;
-   font-weight: 1000;
-   font-size: larger;
-  }
+  background-image: url("https://images.unsplash.com/photo-1755544212941-9c450ef4d369?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  font-family: "Almendra Display", serif;
+  font-weight: 1000;
+  font-size: larger;
+}
 
 body a{
   color: black;
@@ -20,17 +16,78 @@ body a:hover{
   color: crimson;
 }
 
+.under {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+  
+}
+
+.underContact {
+  display: flex;
+  align-items: space-around;
+  justify-content: center;
+  gap: 20px;
+  margin: 72px
+}
+
+.main {
+  display: flex;
+}
+
+/**************   Mobile   *****************/
+@media (max-width: 680px) {
+    nav {
+      display: flex;
+      flex-direction: column;
+      
+    }
+
+    .sNav {
+      display: none;
+    }
+
+    header {
+      max-width: 500px;
+    }
+
+    .section {
+      max-width: 500px;
+    }
+
+    .underContact {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      margin: 72px
+    } 
+
+    .three-col {
+      display: grid;
+      gap: 10px;
+      grid-template-columns: 1fr;
+    }
+}
+
+@media (min-width: 681px) {
+    .three-col {
+      display: grid;
+      gap: 10px;
+      grid-template-columns: 1fr 1fr;
+    }
+}
+
 /****************   Nav Section **********************/
 nav {
-	display: flex;
+  display: flex;
   justify-content: space-between;
   color:aliceblue;
-  
   padding: 20px;
-  border-top: 5px ridge #0e3417;
-  border-right: 5px ridge #0e3417;
-  border-left: 5px ridge #0e3417;
   align-items: center;
+  border: 5px ridge #0e3417;
   background-image: url("https://images.unsplash.com/photo-1702635396989-820636094313?q=80&w=2027&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
 }
 
@@ -38,37 +95,44 @@ nav a {
   color:aliceblue;
 }
 
+nav div {
+  display: flex;
+  gap: 15px;
+}
 
+/****************   Sticky Nav Section **********************/
 
-/***********************  Footer Section   **************************/
-footer {
-	display: flex;
-  justify-content: center;
+.sNav {
+  position: sticky;
+  top: 0;
+  z-index: 90;
   color:aliceblue;
-  
-  padding: 20px;
-  border-bottom: 5px ridge #0e3417;
-  border-right: 5px ridge #0e3417;
-  border-left: 5px ridge #0e3417;
-  align-items: center;
+  margin: 20px;
+  padding: 10px;
+  border: solid #0e3417;
+  border-radius: 10px;
+  border-width: 5px;
+  height: fit-content;
   background-image: url("https://images.unsplash.com/photo-1702635396989-820636094313?q=80&w=2027&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
 }
 
-footer a {
+.sNav a {
   color:aliceblue;
 }
 
-
-
-
-/*********** Splash Page ************************/
+/****************   Header Section **********************/
 header {
   display: flex;
-  justify-content:center;
+  flex-direction: column;
   align-items: center;
+  width: fit-content;
+  height: fit-content;
   gap: 15px;
   padding: 20px;
-  border: 5px ridge #0e3417;
+  border: solid #0e3417;
+  border-radius: 10px;
+  border-width: 5px;
+  background-color: rgba(110, 143, 74, 0.3); 
 }
 
 header h1 {
@@ -82,80 +146,76 @@ header img {
   border-width: 5px;
 }
 
-.address {
- display: flex;
-  justify-content:center;
-  align-items: center;
-  gap: 15px;
-  padding: 5px;
-  border-right: 5px ridge #0e3417;
-  border-left: 5px ridge #0e3417;
-}
-
-.tagline {
+.splash {
   display: flex;
   justify-content:center;
   align-items: center;
   gap: 15px;
-  padding: 5px;
-  border-right: 5px ridge #0e3417;
-  border-left: 5px ridge #0e3417;
 }
 
-/************* Sections ********************/
-section {
-  
-  padding: 15px;
-  border-right: 5px ridge #0e3417;
-  border-left: 5px ridge #0e3417;
-  border-bottom: 5px ridge #0e3417;
+.address {
+  padding: 10px;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-hr {
-  border-top: 5px ridge #0e3417;
-  
+.tagline {
+  margin-top: 20px;
+  border-left: solid #0e3417;
+  border-right: solid #0e3417;
+  padding: 10px;
 }
 
-section h2 {
+/****************  Section  **********************/
+
+.section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: fit-content;
+  height: fit-content;
+  gap: 15px;
+  padding: 20px;
+  margin-top: 20px;
+  border: solid #0e3417;
+  border-radius: 10px;
+  border-width: 5px;
+  background-color: rgba(110, 143, 74, 0.3);
+} 
+
+.section h1 {
   font-family: "Almendra SC", serif;
   color: #0e3417;
 }
 
-section h3 {
+.section img {
+  border: solid #0e3417;
+  border-radius: 10px;
+  border-width: 5px;
+}
+
+.section dt {
   font-family: "Almendra SC", serif;
-  color: aliceblue;
+  color: #0e3417;
+  font-size: larger;
+  border: solid #0e3417;
+  border-radius: 10px;
+  border-width: 3px;
 }
 
-section dl {
-  display: grid;
-  gap: 10px;
-	grid-template-columns: 1fr 1fr;
-
-  
+.section dt a{
+  color: #0e3417;
 }
 
-
-
-section ul {
-  list-style-type:square;
-   padding: 15px;
-}
-
-section a {
+.bigLink {
+  font-family: "Almendra SC", serif;
   color: darkred;
-  text-decoration: none;
+  font-size: larger;
 }
 
-section a:hover {
-  color: crimson;
-}
-
-/**************   Projects   *****************/
-.three-col {
-	display: grid;
-  gap: 10px;
-	grid-template-columns: 1fr 1fr 1fr;
-}
+/****************  Cards  **********************/
 
 .card img {
   border: solid #0e3417;
@@ -165,6 +225,9 @@ section a:hover {
 
 .card {
   border: solid #0e3417;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   border-radius: 10px;
   border-width: 5px;
   color:aliceblue;
@@ -172,50 +235,83 @@ section a:hover {
   background-image: url("https://images.unsplash.com/photo-1702635396989-820636094313?q=80&w=2027&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
 }
 
-/**************   Responsiveness   *****************/
-@media (max-width: 680px) {
-    nav {
-      display: flex;
-      flex-direction: column;
-      
-    }
+/****************  Forms  **********************/
 
-    .three-col {
-      display: grid;
-      gap: 10px;
-	    grid-template-columns: 1fr;
-    }
-}
-
-/**************   Contact Page   *****************/
-.one-col {
-  display: grid;
-      gap: 10px;
-	    grid-template-columns: 1fr;
-      align-content: center;
-}
-
-input {
-  background-color:darkolivegreen;
+button {
+  background-color:darkred;
   border-width: 2px;
-  border: ridge #0e3417;
-  
-  
+  border: solid rgb(64, 0, 0);
+  border-radius: 5px;
+  padding: 2px;
+  font-family: "Almendra Display", serif;
+  font-weight: 1000;
+  font-size: large;
+  color: aliceblue
+}
 
+button:hover {
+  background-color:crimson;
+  cursor: pointer;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 textarea {
-   background-color:darkolivegreen;
-  border-width: 2px;
-  border: ridge #0e3417;
-  
-  
+  width: 300px;
+  height: 150px;
+  border: solid #0e3417;
+  border-radius: 5px;
+  border-width: 5px;
+  background-color: rgb(229, 245, 179);
+  font-family: "Almendra Display", serif;
+  font-weight: 1000;
 }
 
-button {
-  background-color:darkolivegreen;
-  border-width: 2px;
-  border: ridge #0e3417;
-   font-family: "Almendra SC", serif;
-   color:aliceblue;
+input {
+  border: solid #0e3417;
+  border-radius: 5px;
+  border-width: 5px;
+  background-color: rgb(229, 245, 179);
+  font-family: "Almendra Display", serif;
+  font-weight: 1000;
+}
+
+textarea:focus, input:focus {
+  outline: none;
+  border-color: darkred;
+}
+
+/****************  Footer  **********************/
+footer {
+  display: flex;
+  justify-content: center;
+  color:aliceblue;
+  padding: 20px;
+  align-items: center;
+  border: 5px ridge #0e3417;
+  background-image: url("https://images.unsplash.com/photo-1702635396989-820636094313?q=80&w=2027&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+}
+
+footer a {
+  color:aliceblue;
+}
+
+/**************** Portfolio  **********************/
+
+.collage {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.collage img {
+  border: solid #0e3417;
+  border-radius: 10px;
+  border-width: 5px;
+  margin: 10px;
 }

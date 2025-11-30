@@ -1,0 +1,213 @@
+* { margin: 0; padding: 0; }
+
+
+body {
+   
+   background-image: url("https://images.unsplash.com/photo-1755544212941-9c450ef4d369?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+   font-family: "Almendra Display", serif;
+   font-weight: 1000;
+   font-size: larger;
+  }
+
+body a{
+  color: black;
+}
+
+body a:hover{
+  color: crimson;
+}
+
+/****************   Nav Section **********************/
+nav {
+	display: flex;
+  justify-content: space-between;
+  color:aliceblue;
+  border: 5px ridge #0e3417;
+  padding: 20px;
+  align-items: center;
+  background-image: url("https://images.unsplash.com/photo-1702635396989-820636094313?q=80&w=2027&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+}
+
+nav a {
+  color:aliceblue;
+}
+
+
+
+/***********************  Footer Section   **************************/
+footer {
+	display: flex;
+  justify-content: center;
+  color:aliceblue;
+  
+  padding: 20px;
+  align-items: center;
+  background-image: url("https://images.unsplash.com/photo-1702635396989-820636094313?q=80&w=2027&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+}
+
+footer a {
+  color:aliceblue;
+}
+
+
+
+
+/*********** Splash Page ************************/
+header {
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  width: fit-content;
+  height: fit-content;
+  gap: 15px;
+  padding: 20px;
+  border: solid #0e3417;
+  border-radius: 10px;
+  border-width: 5px;
+  background-color: rgba(110, 143, 74, 0.5);
+}
+
+header h1 {
+  font-family: "Almendra SC", serif;
+  color: #0e3417;
+}
+
+header img {
+  border: solid #0e3417;
+  border-radius: 10px;
+  border-width: 5px;
+}
+
+.address {
+ display: flex;
+  justify-content:center;
+  align-items: center;
+  gap: 15px;
+  padding: 5px;
+}
+
+.tagline {
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  gap: 15px;
+  padding: 5px;
+}
+
+/************* Sections ********************/
+section {
+  
+  padding: 15px;
+  border-right: 5px ridge #0e3417;
+  border-left: 5px ridge #0e3417;
+  border-bottom: 5px ridge #0e3417;
+}
+
+hr {
+  border-top: 5px ridge #0e3417;
+  
+}
+
+section h2 {
+  font-family: "Almendra SC", serif;
+  color: #0e3417;
+}
+
+section h3 {
+  font-family: "Almendra SC", serif;
+  color: aliceblue;
+}
+
+section dl {
+  display: grid;
+  gap: 10px;
+	grid-template-columns: 1fr 1fr;
+
+  
+}
+
+
+
+section ul {
+  list-style-type:square;
+   padding: 15px;
+}
+
+section a {
+  color: darkred;
+  text-decoration: none;
+}
+
+section a:hover {
+  color: crimson;
+}
+
+/**************   Projects   *****************/
+.three-col {
+	display: grid;
+  gap: 10px;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+
+.card img {
+  border: solid #0e3417;
+  border-radius: 10px;
+  border-width: 5px;
+}
+
+.card {
+  border: solid #0e3417;
+  border-radius: 10px;
+  border-width: 5px;
+  color:aliceblue;
+  padding: 15px;
+  background-image: url("https://images.unsplash.com/photo-1702635396989-820636094313?q=80&w=2027&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+}
+
+/**************   Responsiveness   *****************/
+@media (max-width: 680px) {
+    nav {
+      display: flex;
+      flex-direction: column;
+      
+    }
+
+    .three-col {
+      display: grid;
+      gap: 10px;
+	    grid-template-columns: 1fr;
+    }
+}
+
+/**************   Contact Page   *****************/
+.one-col {
+  display: grid;
+      gap: 10px;
+	    grid-template-columns: 1fr;
+      align-content: center;
+}
+
+input {
+  background-color:darkolivegreen;
+  border-width: 2px;
+  border: ridge #0e3417;
+  
+  
+
+}
+
+textarea {
+   background-color:darkolivegreen;
+  border-width: 2px;
+  border: ridge #0e3417;
+  
+  
+}
+
+button {
+  background-color:darkolivegreen;
+  border-width: 2px;
+  border: ridge #0e3417;
+   font-family: "Almendra SC", serif;
+   color:aliceblue;
+}
