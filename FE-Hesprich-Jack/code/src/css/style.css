@@ -1,0 +1,75 @@
+h1 {
+    font-family: "Archivo Black", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    font-family: "Archivo", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+    background-color: #1a1a2e;
+}
+
+#controls {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 10;
+    padding: 10px;
+}
+
+#GUI {
+    max-height: 500px; 
+    overflow-y: auto;
+    position: absolute;
+    top: 200px;
+    left: 10px;
+    z-index: 10;
+    padding: 10px;
+}
+
+.styleDiv {
+    background-image: linear-gradient(to bottom right, rgba(236, 40, 193, 0.52), rgba(44, 29, 255, 0.755));
+    border-radius: 20px;
+    color: white;
+    width: fit-content;
+}
+
+.lil-gui {
+    --background-color: rgba(44, 29, 255, 0.144);
+    --title-background-color: rgba(44, 29, 255, 0.755);
+    --widget-color: #d5ceff;
+    --text-color: #fff;
+    --font-size: 14px;
+    --font-family: "Archivo", sans-serif;
+    border-radius: 10px;
+}
+
+.lil-title {
+    border-radius: 10px;
+}
+
+
+a:link {
+  color: white; /* unvisited links */
+}
+
+a:visited {
+  color: white; /* visited links */
+}
+
+a:focus {
+  outline: 2px solid plum; /* keyboard focus */
+}
+
+a:hover {
+  color: plum; /* mouse over links */
+}
+
+a:active {
+  color: plum; /* selected links */
+}
