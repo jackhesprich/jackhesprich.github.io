@@ -73,3 +73,13 @@ a:hover {
 a:active {
   color: plum; /* selected links */
 }
+
+@media (max-width: 680px) {
+    #GUI {
+        max-height: 500px; 
+        overflow-y: auto;
+        margin-top: 90px;
+        z-index: 10;
+        padding: 10px;
+    }
+}
